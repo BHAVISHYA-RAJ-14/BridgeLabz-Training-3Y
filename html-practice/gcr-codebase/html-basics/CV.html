@@ -1,75 +1,243 @@
 <!DOCTYPE html>
-<html>
+<!-- The DOCTYPE declaration tells the browser to render the page in standards mode. Removing or changing it can trigger quirks mode and break modern layouts. -->
+<html lang="en">
+<!-- <html> is the root element of the document. The lang attribute helps browsers and assistive technologies know the page language. -->
 <head>
-<title>Bhavishya Raj - CV</title>
+  <!-- <head> contains metadata, links, styles, and the title. Content here is not rendered as page body text. -->
+  <meta charset="UTF-8">
+  <!-- <meta charset> sets the document encoding. Default is browser-dependent; using UTF-8 prevents character issues. -->
+  <title>Bhavishya Raj — Cloud & DevOps Resume</title>
+  <!-- <title> appears in the browser tab and search results. It must be inside head. -->
+  <style>
+    /* <style> defines CSS rules within the document. It must be inside head or body, but placing it in head is standard. */
+    body {
+      margin: 0;
+      padding: 1.5rem;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background-color: #edf2f7;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 14px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    header {
+      text-align: center;
+      padding-bottom: 1.25rem;
+      border-bottom: 2px solid #d1dce6;
+      margin-bottom: 1.5rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      letter-spacing: -0.04em;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      color: #4a5568;
+    }
+
+    address {
+      margin: 1rem auto 0;
+      color: #4a5568;
+      line-height: 1.6;
+    }
+
+    address a {
+      color: #1d4ed8;
+      text-decoration: none;
+    }
+
+    address a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 1.25rem 0;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    section:first-of-type {
+      border-top: none;
+    }
+
+    h2 {
+      margin: 0 0 1rem;
+      font-size: 1.2rem;
+      letter-spacing: -0.03em;
+      color: #0f172a;
+      display: inline-block;
+      border-bottom: 3px solid #2563eb;
+      padding-bottom: 0.25rem;
+    }
+
+    h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1rem;
+      color: #111827;
+    }
+
+    ul,
+    dl {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+
+    li,
+    dd {
+      margin: 0 0 0.75rem;
+      line-height: 1.65;
+    }
+
+    dt {
+      margin-top: 0.9rem;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    p {
+      margin: 0 0 0.85rem;
+      line-height: 1.7;
+    }
+  </style>
 </head>
 <body>
-<h1>Bhavishya Raj</h1>
-<p>Cloud and DevOps Engineering Student</p>
-<p>Patna, India</p>
-<p>Phone: +91 7481979421</p>
-<p>Email: bhavishayraj336@gmail.com</p>
-<p>LinkedIn: linkedin.com/in/bhavishyaraj</p>
-<p>GitHub: github.com/BHAVISHYA-RAJ-14</p>
+  <!-- <body> contains the rendered page content. Everything visible should be inside body. -->
+  <header>
+    <!-- <header> defines introductory content or navigation for a section or page. It is semantic and default display:block. -->
+    <h1>Bhavishya Raj</h1>
+    <!-- <h1> is the main heading. There should typically be only one per page, and it is block-level by default. -->
+    <p>Cloud & DevOps Engineering Student</p>
+    <!-- <p> defines a paragraph. It is block-level and adds margin by default. -->
+    <address>
+      <!-- <address> marks contact information. It is block-level and has semantic meaning for authorship/contact. -->
+      Patna, India<br>
+      <!-- <br> inserts a line break. It is an empty inline element. Use sparingly, only for line breaks. -->
+      <a href="tel:+917481979421">+91 74819 79421</a><br>
+      <!-- <a> is an anchor element and default inline. With href it becomes a link. If href is removed, it is not a link. -->
+      <a href="mailto:bhavishayraj336@gmail.com">bhavishayraj336@gmail.com</a><br>
+      <a href="https://linkedin.com/in/bhavishyaraj" target="_blank" rel="noopener noreferrer">linkedin.com/in/bhavishyaraj</a><br>
+      <a href="https://github.com/BHAVISHYA-RAJ-14" target="_blank" rel="noopener noreferrer">github.com/BHAVISHYA-RAJ-14</a>
+    </address>
+  </header>
 
-<h1>About Me</h1>
-<p>Cloud and DevOps engineering student with hands-on production AWS experience in infrastructure as code, serverless architecture, and CI/CD automation, using tools like Terraform, EKS, and GitOps. AWS Certified Solutions Architect - Associate.</p>
+  <main>
+    <!-- <main> encloses the primary content of the page. There should be only one main element per document. -->
+    <section>
+      <!-- <section> groups related content. Default display:block. It is best used with a heading. -->
+      <h2>Summary</h2>
+      <!-- <h2> is a secondary heading. Headings should be nested in order, ideally after an h1. -->
+      <p>Driven Cloud and DevOps engineering student with hands-on AWS production experience in infrastructure as code, serverless architecture, CI/CD automation, and GitOps. AWS Certified Solutions Architect – Associate with a security-first mindset.</p>
+    </section>
 
-<h1>Education</h1>
-<p>B.Tech in Computer Science (Cloud Computing and DevOps)</p>
-<p>GLA University, Mathura</p>
-<p>2024 - 2028 (Expected)</p>
+    <section>
+      <h2>Education</h2>
+      <article>
+        <!-- <article> represents a self-contained block of content. It can be reused or syndicated. -->
+        <h3>B.Tech in Computer Science (Cloud Computing and DevOps)</h3>
+        <!-- <h3> is a tertiary heading and should appear inside a section or article. -->
+        <p>GLA University, Mathura</p>
+        <p>2024 — 2028 (Expected)</p>
+      </article>
+    </section>
 
-<h1>Experience</h1>
-<p>Cloud and DevOps Intern - Next Afield</p>
-<p>Remote / Virtual Internship</p>
-<p>March 2026 - June 2026</p>
-<p>Delivered three production-grade AWS projects spanning infrastructure as code, serverless architecture, and CI/CD automation, applying GitOps and security-first practices (Terraform, Checkov, OIDC) throughout a remote internship.</p>
+    <section>
+      <h2>Experience</h2>
+      <article>
+        <h3>Cloud and DevOps Intern</h3>
+        <p>Next Afield | Remote</p>
+        <p>March 2026 — June 2026</p>
+        <ul>
+          <!-- <ul> creates an unordered list. It is block-level and uses bullet markers by default. -->
+          <li>Delivered three production-grade AWS projects using Terraform, EKS, serverless architecture, and CI/CD automation.</li>
+          <!-- <li> list item. Must be used inside <ul>, <ol>, or <menu>. -->
+          <li>Applied GitOps patterns with automated plan/review/apply workflows, container security scanning, and remote state locking.</li>
+          <li>Implemented OIDC-based permissions and IAM Roles for Service Accounts (IRSA) for secure EKS workloads.</li>
+        </ul>
+      </article>
+    </section>
 
-<h1>Projects</h1>
-<p>Next Afield AWS Infrastructure - June 2026</p>
-<p>Provisioned 57 production-grade AWS resources across a 4-layer architecture (VPC, EKS, RDS, ElastiCache) using Terraform, achieving ~70% compute cost savings via Spot-backed EKS node groups.</p>
-<p>Implemented a GitOps deployment workflow with Atlantis (PR, plan, Checkov security scan, approval, apply) and remote state locking via S3 and DynamoDB, eliminating manual AWS console changes.</p>
-<p>Configured IAM Roles for Service Accounts (IRSA) via OIDC for fine-grained, per-pod permissions on EKS.</p>
-<p>Tech: Terraform, AWS EKS, VPC, RDS, ElastiCache, IAM, Atlantis, Checkov, GitOps</p>
+    <section>
+      <h2>Projects</h2>
+      <article>
+        <h3>Next Afield AWS Infrastructure</h3>
+        <p>June 2026</p>
+        <ul>
+          <li>Provisioned 57 AWS resources across VPC, EKS, RDS, and ElastiCache with Terraform.</li>
+          <li>Reduced compute cost by ~70% using Spot-backed EKS node groups.</li>
+          <li>Automated GitOps deployment with Atlantis, Checkov, and S3/DynamoDB remote state locking.</li>
+          <li>Enforced per-pod permissions using IRSA and OIDC.</li>
+        </ul>
+        <p>Tech: Terraform, AWS EKS, VPC, RDS, ElastiCache, IAM, Atlantis, Checkov, GitOps</p>
+      </article>
 
-<p>Serverless Order-Processing Platform - June 2026</p>
-<p>Designed an event-driven serverless order-processing system (API Gateway, Lambda, DynamoDB, EventBridge, Step Functions) covering 8/8 planned deliverables using AWS SAM.</p>
-<p>Optimized Lambda cold starts to under 500ms through arm64/Graviton2 runtime, lazy imports, and Lambda Layers. Benchmarked memory allocation from 128MB to 1024MB using Lambda Power Tuning.</p>
-<p>Instrumented full observability with Lambda Powertools (structured JSON logging, X-Ray tracing, correlation IDs) and configured SQS dead-letter queues with 14-day retention for failure handling.</p>
-<p>Set up a cost-monitoring dashboard with CloudWatch and SNS-based budget alerts.</p>
-<p>Tech: Python 3.12, AWS Lambda, API Gateway, DynamoDB, EventBridge, Step Functions, SQS, CloudWatch, X-Ray</p>
+      <article>
+        <h3>Serverless Order-Processing Platform</h3>
+        <p>June 2026</p>
+        <ul>
+          <li>Designed an event-driven order-processing system using API Gateway, Lambda, DynamoDB, EventBridge, Step Functions, and SQS.</li>
+          <li>Reduced Lambda cold starts below 500ms with arm64 runtime, lazy imports, and Lambda Layers.</li>
+          <li>Added structured JSON logging, X-Ray tracing, correlation IDs, and DLQ handling.</li>
+          <li>Built cost observability using CloudWatch dashboards and SNS budget alerts.</li>
+        </ul>
+        <p>Tech: Python 3.12, AWS Lambda, API Gateway, DynamoDB, EventBridge, Step Functions, SQS, CloudWatch, X-Ray</p>
+      </article>
 
-<p>GitHub Actions CI/CD Platform - June 2026</p>
-<p>Built a reusable GitHub Actions CI/CD platform with keyless AWS authentication via OIDC, removing the need for stored long-lived credentials.</p>
-<p>Implemented a 3D build matrix (2 OS x 2 Python versions x 2 Postgres versions = 8 parallel jobs) with 100% unit test coverage (Pytest) and automated Trivy container security scanning.</p>
-<p>Configured multi-architecture Docker builds (amd64 and arm64) pushed to AWS ECR, deployed via self-hosted Kubernetes runners (Actions Runner Controller) with staged rollouts (staging, soak, production).</p>
-<p>Tech: GitHub Actions, OIDC, Docker, Kubernetes, AWS ECR, Pytest, Trivy, Helm</p>
+      <article>
+        <h3>GitHub Actions CI/CD Platform</h3>
+        <p>June 2026</p>
+        <ul>
+          <li>Created reusable CI/CD pipelines with keyless AWS authentication via OIDC.</li>
+          <li>Built an 8-job matrix across operating systems, Python versions, and Postgres versions.</li>
+          <li>Automated multi-architecture Docker builds pushed to AWS ECR and deployed with Kubernetes runners.</li>
+          <li>Integrated Trivy container security scanning and staged rollout gates.</li>
+        </ul>
+        <p>Tech: GitHub Actions, OIDC, Docker, Kubernetes, AWS ECR, Pytest, Trivy, Helm</p>
+      </article>
+    </section>
 
-<h1>Skills</h1>
-<p>Python</p>
-<p>Bash</p>
-<p>HCL (Terraform)</p>
-<p>AWS (EKS, VPC, RDS, ElastiCache, IAM, Lambda, API Gateway, DynamoDB, EventBridge, Step Functions, SQS, CloudWatch, X-Ray)</p>
-<p>Atlantis</p>
-<p>GitHub Actions</p>
-<p>Docker</p>
-<p>Kubernetes</p>
-<p>GitOps</p>
-<p>OIDC</p>
-<p>Git</p>
-<p>Also familiar with: Java, SQL, GCP, OCI</p>
-<p>Core CS Fundamentals: Operating Systems, DBMS, Computer Organization</p>
+    <section>
+      <h2>Skills</h2>
+      <dl>
+        <!-- <dl> defines a description list. It pairs <dt> terms with <dd> descriptions. -->
+        <dt>Languages</dt>
+        <!-- <dt> is a term/name in a description list. It is block-level by default in modern browsers. -->
+        <dd>Python, Bash, HCL, Java, SQL</dd>
+        <!-- <dd> is the description or value for the preceding <dt>. -->
+        <dt>Cloud & DevOps</dt>
+        <dd>AWS (EKS, VPC, RDS, ElastiCache, IAM, Lambda, API Gateway, DynamoDB, EventBridge, Step Functions, SQS, CloudWatch, X-Ray), GCP, OCI</dd>
+        <dt>CI/CD & Infrastructure</dt>
+        <dd>Terraform, GitHub Actions, Atlantis, GitOps, Docker, Kubernetes, OIDC, Helm</dd>
+        <dt>Foundations</dt>
+        <dd>Operating Systems, DBMS, Computer Organization, Git</dd>
+      </dl>
+    </section>
 
-<h1>Certifications</h1>
-<p>AWS Certified Solutions Architect - Associate</p>
-<p>Google Cloud Platform (GCP) Foundations</p>
-<p>Oracle Cloud Infrastructure (OCI) Certified Foundations Associate</p>
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>AWS Certified Solutions Architect – Associate</li>
+        <li>Google Cloud Platform (GCP) Foundations</li>
+        <li>Oracle Cloud Infrastructure (OCI) Certified Foundations Associate</li>
+      </ul>
+    </section>
 
-<h1>Achievements</h1>
-<p>AWS Student Builder Leader and President, AWS Student Builder Group, GLA University (2026)</p>
-<p>Finalist, Build4Bharat National Hackathon (2026) - ML-based violence and weapon detection system for safety</p>
-<p>Participant, TechKriti, IIT Kanpur (2026)</p>
-
+    <section>
+      <h2>Achievements</h2>
+      <ul>
+        <li>AWS Student Builder Leader and President, AWS Student Builder Group at GLA University (2026)</li>
+        <li>Finalist, Build4Bharat National Hackathon (2026) — ML-based violence and weapon detection system</li>
+        <li>Participant, TechKriti, IIT Kanpur (2026)</li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
