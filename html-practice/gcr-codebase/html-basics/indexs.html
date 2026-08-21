@@ -11,8 +11,19 @@
             border: 1px solid black;
             margin: 0 auto;
         }
+
+        .embed-section {
+            max-width: 800px;
+            margin: 30px auto;
+        }
+
+        iframe {
+            width: 100%;
+            min-height: 300px;
+            border: 1px solid black;
+        }
     </style>
-</head>
+</head> 
 <body>
     <h1>Registration Form</h1>
 
@@ -81,5 +92,26 @@
 
         <button type="submit">Submit</button>
     </form>
+
+    <section class="embed-section">
+        <h2>Our Location</h2>
+        <iframe
+            src="https://www.google.com/maps?q=BridgeLabz%20Mumbai&output=embed"
+            title="Map showing the BridgeLabz Mumbai location"
+            loading="lazy"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section class="embed-section">
+        <h2>Learn HTML</h2>
+        <iframe
+            src="https://www.youtube.com/embed/qz0aGYrrlhU?rel=0"
+            title="HTML tutorial video"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </section>
 </body>
 </html>
