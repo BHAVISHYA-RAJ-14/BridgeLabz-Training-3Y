@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Loading Spinner</title>
+	<style>
+		:root {
+			font-family: Arial, sans-serif;
+			color: #1f2937;
+			background: #f3f4f6;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			min-height: 100vh;
+			margin: 0;
+			display: grid;
+			place-items: center;
+		}
+
+		.loader {
+			display: grid;
+			justify-items: center;
+			gap: 1rem;
+		}
+
+		.spinner {
+			width: 64px;
+			height: 64px;
+			border: 8px solid #d1d5db;
+			border-top-color: #2563eb;
+			border-radius: 50%;
+			animation: spin 0.9s linear infinite;
+		}
+
+		.loader p {
+			margin: 0;
+			font-size: 1rem;
+			font-weight: 600;
+		}
+
+		@keyframes spin {
+			to {
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<main class="loader" aria-label="Loading">
+		<div class="spinner" role="status" aria-label="Loading"></div>
+		<p>Loading...</p>
+	</main>
+</body>
+</html>
