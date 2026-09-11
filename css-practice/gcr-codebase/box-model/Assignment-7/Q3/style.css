@@ -1,0 +1,10 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, sans-serif; }
+header, footer { position: fixed; left: 0; width: 100%; z-index: 2; text-align: center; padding: 18px; background: #222; color: white; }
+header { top: 0; }
+footer { bottom: 0; }
+main { padding-top: 80px; padding-bottom: 70px; }
+section { min-height: 75vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 30px; color: white; }
+.linear { background: linear-gradient(120deg, #264653, #2a9d8f, #e9c46a); background-attachment: fixed; }
+.radial { background: radial-gradient(circle, #e76f51, #6d2e46, #222); }

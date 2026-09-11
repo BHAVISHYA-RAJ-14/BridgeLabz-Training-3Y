@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; padding: 40px; background: #f5f5f5; color: #222; }
+main { max-width: 750px; margin: auto; background: white; padding: 30px; border-radius: 12px; }
+/* Attribute selector: selects text inputs */
+input[type="text"] { border: 3px solid #457b9d; }
+/* Attribute selector: selects links beginning with https */
+a[href^="https"] { color: #2a9d8f; font-weight: bold; }
+/* Pseudo-class: hover changes list item */
+.items li:hover { background: #ddd; }
+/* Pseudo-class: focus styles focused input */
+input:focus { outline: 3px solid #e9c46a; }
+/* Pseudo-class: nth-child selects the second item */
+.items li:nth-child(2) { color: #e76f51; font-weight: bold; }
+/* Pseudo-element: adds content before heading */
+h1::before { content: "★ "; }
+/* Pseudo-element: adds content after heading */
+h1::after { content: " ★"; }
+/* Child combinator > selects direct children */
+.parent > span { font-weight: bold; }
+/* Descendant combinator selects any span inside .parent */
+.parent span { color: #264653; }
+/* Adjacent sibling + selects the first span after p */
+.parent p + span { background: #e9c46a; }
+/* General sibling ~ selects later spans after p */
+.parent p ~ span { padding: 5px; }
+input { display: block; width: 100%; padding: 12px; margin: 12px 0; }

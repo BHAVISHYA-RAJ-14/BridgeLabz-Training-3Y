@@ -1,0 +1,9 @@
+/* Center all boxes using Flexbox */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; font-family: Arial, sans-serif; background: #eef2f7; }
+.container { min-height: 100vh; display: flex; justify-content: center; align-items: center; gap: 25px; flex-wrap: wrap; padding: 30px; }
+.box { padding: 20px; color: white; text-align: center; border-radius: 12px; overflow: auto; }
+.box1 { width: 300px; height: 180px; background: #457b9d; }
+.box2 { width: 70%; min-height: 160px; max-width: 500px; background: #2a9d8f; }
+.box3 { width: 18em; height: 25vh; min-height: 150px; max-width: 300px; background: #e76f51; overflow: hidden; }
+@media (max-width: 700px) { .box2 { width: 100%; } }

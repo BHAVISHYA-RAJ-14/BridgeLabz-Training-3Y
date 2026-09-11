@@ -1,0 +1,13 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f3f3f3; }
+main { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 35px; padding: 30px; }
+.model { outline: 2px dashed #777; }
+.margin-layer { background: #ffd166; padding: 30px; }
+.border-layer { background: #e76f51; border: 12px solid #9b2226; padding: 25px; }
+.padding-layer { background: #90be6d; padding: 30px; }
+.content-layer { background: #457b9d; color: white; padding: 35px 70px; text-align: center; }
+.label { display: block; text-align: center; font-weight: bold; margin-bottom: 8px; }
+.comparison { display: flex; gap: 25px; flex-wrap: wrap; justify-content: center; }
+.comparison div { width: 280px; padding: 20px; border: 8px solid #222; background: white; }
+.default { box-sizing: content-box; }
+.borderbox { box-sizing: border-box; }

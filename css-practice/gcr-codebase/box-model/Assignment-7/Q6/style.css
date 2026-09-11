@@ -1,0 +1,10 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; font-family: Arial, sans-serif; background: #f3f3f3; }
+.showcase { min-height: 100vh; display: flex; justify-content: center; align-items: center; gap: 50px; flex-wrap: wrap; padding: 30px; }
+.showcase section { text-align: center; }
+.box { width: 150px; height: 150px; display: flex; align-items: center; justify-content: center; background: #457b9d; color: white; border-radius: 10px; transition: all 0.4s ease; }
+/* Each box demonstrates one transformation */
+.rotate:hover { transform: rotate(15deg); }
+.scale:hover { transform: scale(1.2); }
+.translate:hover { transform: translate(20px, -20px); }
+.skew:hover { transform: skew(12deg); }
