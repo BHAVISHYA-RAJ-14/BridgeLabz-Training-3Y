@@ -1,0 +1,8 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 30px; font-family: Arial, sans-serif; background: #f4f4f4; }
+h1 { text-align: center; margin-bottom: 30px; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; }
+figure { margin: 0; overflow: hidden; background: white; border-radius: 10px; }
+.photo { height: 220px; display: flex; align-items: center; justify-content: center; background: #ddd; font-size: 22px; transition: transform 0.5s ease; }
+figure:hover .photo { transform: scale(1.08); }
+figcaption { padding: 15px; text-align: center; font-weight: bold; }
