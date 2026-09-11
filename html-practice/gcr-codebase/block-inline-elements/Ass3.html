@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Multi-Section Resume</title>
+</head>
+<body>
+    <!-- 
+    QUESTION 1:
+    Create a multi-section resume page using only HTML.[cite: 6]
+    Include:
+    - <header> -> Name & contact info[cite: 6]
+    - <nav> Quick links (About, Skills, Projects, Education)[cite: 6]
+    - <main>[cite: 6]
+      - <section> About Me[cite: 6]
+      - <section> Skills (unordered list)[cite: 6]
+      - <section> Projects (ordered list)[cite: 6]
+      - <section> Education (table format with course, institute, year)[cite: 6]
+    - <footer> -> Copyright info[cite: 6]
+    -->
+
+    <header>
+        <h1>Bhavishya Raj</h1>
+        <p>Email: bhavishya@example.com | Phone: +1234567890 | Location: India</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#projects">Projects</a> |
+        <a href="#education">Education</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a Computer Science undergraduate focused on Cloud Computing, DevOps, and Infrastructure Automation.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Cloud Computing (AWS)</li>
+                <li>DevOps & CI/CD Pipelines</li>
+                <li>Docker & Kubernetes</li>
+                <li>Python & C++</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ol>
+                <li>Automated Multi-Cloud Infrastructure Deployment</li>
+                <li>GitOps Kubernetes Delivery Pipeline</li>
+                <li>Real-Time Log Analyzer</li>
+            </ol>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Institute</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.Tech Computer Science</td>
+                        <td>State University</td>
+                        <td>2023 - 2026</td>
+                    </tr>
+                    <tr>
+                        <td>High School Diploma</td>
+                        <td>Central Academy</td>
+                        <td>2021 - 2023</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bhavishya Raj. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product Catalog</title>
+</head>
+<body>
+    <!-- 
+    QUESTION 2:
+    Build a Product Catalog page for an online store using only HTML:[cite: 6]
+    - Use a <table> to list products with columns Product Name, Description, Price, and Availability.[cite: 6]
+    - Add one image per product using <img> inside a cell.[cite: 6]
+    - Use attributes like colspan and rowspan where necessary.[cite: 6]
+    -->
+
+    <h1>Online Tech Store - Product Catalog</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Product Image</th>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Availability</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Electronics</td>
+                <td><img src="laptop.jpg" alt="High Performance Laptop" width="80"></td>
+                <td>Pro Laptop 15"</td>
+                <td>High performance laptop with 16GB RAM and 512GB SSD.</td>
+                <td>$1,200</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <td><img src="mouse.jpg" alt="Wireless Mouse" width="80"></td>
+                <td>Wireless Mouse</td>
+                <td>Ergonomic 2.4GHz optical wireless mouse.</td>
+                <td>$25</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <td>Accessories</td>
+                <td><img src="headphones.jpg" alt="Noise Cancelling Headphones" width="80"></td>
+                <td>Noise Cancelling Headphones</td>
+                <td>Over-ear Bluetooth headphones with active noise cancellation.</td>
+                <td>$150</td>
+                <td>Out of Stock</td>
+            </tr>
+            <tr>
+                <td colspan="6" align="center">Free shipping available on orders over $50!</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Course Registration Form</title>
+</head>
+<body>
+    <!-- 
+    QUESTION 3:
+    Create a Course Registration Form structure using HTML only.[cite: 6]
+    It should include:
+    - <fieldset> and <legend> for grouping fields.[cite: 6]
+    - A <select> dropdown for selecting a course.[cite: 6]
+    - <input> fields for name and email.[cite: 6]
+    - A <table> at the bottom showing available course schedules (Day, Time, Instructor).[cite: 6]
+    -->
+
+    <h1>Course Registration</h1>
+
+    <form>
+        <fieldset>
+            <legend>Student Information & Course Selection</legend>
+            
+            <p>
+                <label for="student-name">Full Name:</label><br>
+                <input type="text" id="student-name" name="student_name">
+            </p>
+
+            <p>
+                <label for="student-email">Email Address:</label><br>
+                <input type="email" id="student-email" name="student_email">
+            </p>
+
+            <p>
+                <label for="course-select">Select Course:</label><br>
+                <select id="course-select" name="course">
+                    <option value="cs101">CS101 - Introduction to Computer Science</option>
+                    <option value="devops201">DEVOPS201 - Cloud Architecture</option>
+                    <option value="web301">WEB301 - Full Stack Web Development</option>
+                </select>
+            </p>
+
+            <p>
+                <input type="submit" value="Register Now">
+            </p>
+        </fieldset>
+    </form>
+
+    <h2>Available Course Schedules</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Course</th>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Instructor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CS101</td>
+                <td>Monday & Wednesday</td>
+                <td>09:00 AM - 10:30 AM</td>
+                <td>Dr. Alan Turing</td>
+            </tr>
+            <tr>
+                <td>DEVOPS201</td>
+                <td>Tuesday & Thursday</td>
+                <td>11:00 AM - 12:30 PM</td>
+                <td>Prof. Grace Hopper</td>
+            </tr>
+            <tr>
+                <td>WEB301</td>
+                <td>Friday</td>
+                <td>02:00 PM - 05:00 PM</td>
+                <td>Dr. Tim Berners-Lee</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Company Layout</title>
+</head>
+<body>
+    <!-- 
+    QUESTION 4:
+    Create a Company Layout Page using only block-level elements:[cite: 6]
+    - <header> -> Company name[cite: 6]
+    - <nav> -> Navigation links[cite: 6]
+    - <main> Two <section>s: About the company & Services offered (list)[cite: 6]
+    - <aside> -> Display a blockquote from the company's CEO.[cite: 6]
+    - <footer> -> Contact email and address.[cite: 6]
+    -->
+
+    <header>
+        <h1>Apex Cloud Solutions</h1>
+    </header>
+
+    <nav>
+        <p>
+            <a href="#">Home</a> |
+            <a href="#">About Us</a> |
+            <a href="#">Services</a> |
+            <a href="#">Contact</a>
+        </p>
+    </nav>
+
+    <main>
+        <section>
+            <h2>About the Company</h2>
+            <p>Apex Cloud Solutions provides enterprise-grade infrastructure management, continuous deployment pipelines, and scalable cloud hosting for businesses worldwide.</p>
+        </section>
+
+        <section>
+            <h2>Services Offered</h2>
+            <ul>
+                <li>Cloud Migration & Optimization</li>
+                <li>DevOps Automation & CI/CD</li>
+                <li>24/7 Server Monitoring & Security</li>
+                <li>Database Management</li>
+            </ul>
+        </section>
+    </main>
+
+    <aside>
+        <h2>CEO's Message</h2>
+        <blockquote cite="#">
+            "Our mission is to build digital infrastructure that empowers companies to innovate without boundaries."
+            <br>
+            — <cite>Jane Doe, CEO</cite>
+        </blockquote>
+    </aside>
+
+    <footer>
+        <p>Contact Email: contact@apexcloud.com</p>
+        <p>Address: 100 Tech Park Way, Silicon Valley, CA</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>University Topics Hierarchy</title>
+</head>
+<body>
+    <!-- 
+    QUESTION 5:
+    Create a Nested List Structure representing a "University Topics" hierarchy.[cite: 6]
+    Departments -> Courses -> Topics.[cite: 6]
+    Use nested <ul> and <ol> lists properly to show multi-level structure.[cite: 6]
+    -->
+
+    <h1>University Academic Hierarchy</h1>
+
+    <ul>
+        <li>
+            <strong>Department of Computer Science</strong>
+            <ol>
+                <li>
+                    Data Structures & Algorithms
+                    <ul>
+                        <li>Arrays and Linked Lists</li>
+                        <li>Trees and Graphs</li>
+                        <li>Sorting Algorithms</li>
+                    </ul>
+                </li>
+                <li>
+                    Cloud Computing
+                    <ul>
+                        <li>Virtualization</li>
+                        <li>Containerization (Docker)</li>
+                        <li>Serverless Architecture</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <strong>Department of Electrical Engineering</strong>
+            <ol>
+                <li>
+                    Digital Electronics
+                    <ul>
+                        <li>Logic Gates</li>
+                        <li>Flip-Flops and Registers</li>
+                    </ul>
+                </li>
+                <li>
+                    Signal Processing
+                    <ul>
+                        <li>Fourier Transform</li>
+                        <li>Digital Filters</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+    </ul>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Restaurant Menu</title>
+</head>
+<body>
+    <!-- 
+    QUESTION 6:
+    Build a Restaurant Menu Page using:[cite: 6]
+    - <header> for restaurant name.[cite: 6]
+    - <nav> for categories (Starters, Main Course, Desserts).[cite: 6]
+    - <section> for each category containing a table of items with columns: Dish Name, Description, and Price.[cite: 6]
+    - <footer> for contact details.[cite: 6]
+    -->
+
+    <header>
+        <h1>The Gourmet Kitchen</h1>
+    </header>
+
+    <nav>
+        <a href="#starters">Starters</a> |
+        <a href="#main-course">Main Course</a> |
+        <a href="#desserts">Desserts</a>
+    </nav>
+
+    <main>
+        <section id="starters">
+            <h2>Starters</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Dish Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Garlic Herb Bread</td>
+                        <td>Toasted baguette topped with roasted garlic butter and herbs.</td>
+                        <td>$6.50</td>
+                    </tr>
+                    <tr>
+                        <td>Crispy Tomato Soup</td>
+                        <td>Rich tomato broth served with fresh cream and croutons.</td>
+                        <td>$7.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="main-course">
+            <h2>Main Course</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Dish Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Grilled Salmon</td>
+                        <td>Fresh Atlantic salmon fillet served with asparagus and lemon butter.</td>
+                        <td>$22.00</td>
+                    </tr>
+                    <tr>
+                        <td>Wild Mushroom Risotto</td>
+                        <td>Arborio rice cooked with herbs, parmesan, and wild mushrooms.</td>
+                        <td>$18.50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="desserts">
+            <h2>Desserts</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Dish Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chocolate Lava Cake</td>
+                        <td>Warm chocolate cake with a molten center, served with vanilla ice cream.</td>
+                        <td>$9.00</td>
+                    </tr>
+                    <tr>
+                        <td>Classic Tiramisu</td>
+                        <td>Layered espresso-soaked ladyfingers with mascarpone cream.</td>
+                        <td>$8.50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact Us: +1 (555) 019-2834 | Reservation Email: dine@gourmetkitchen.com</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conference Schedule</title>
+</head>
+<body>
+    <!-- 
+    QUESTION 7:
+    Design a Conference Schedule page using HTML tables and semantic tags.[cite: 6]
+    The table should have:
+    - Sessions (Morning, Afternoon, Evening)[cite: 6]
+    - Columns for Time, Topic, Speaker[cite: 6]
+    - Use <thead>, <tbody>, and <tfoot> for structure.[cite: 6]
+    -->
+
+    <header>
+        <h1>Annual Tech Summit 2026 - Schedule</h1>
+    </header>
+
+    <main>
+        <table border="1">
+            <caption>Tech Summit Event Schedule</caption>
+            <thead>
+                <tr>
+                    <th>Session</th>
+                    <th>Time</th>
+                    <th>Topic</th>
+                    <th>Speaker</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Morning</td>
+                    <td>09:00 AM - 10:30 AM</td>
+                    <td>Keynote: Future of Cloud Architecture</td>
+                    <td>Dr. Sarah Connor</td>
+                </tr>
+                <tr>
+                    <td>10:45 AM - 12:15 PM</td>
+                    <td>Building Resilient DevOps Pipelines</td>
+                    <td>Mark R. Johnson</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Afternoon</td>
+                    <td>01:30 PM - 03:00 PM</td>
+                    <td>AI Infrastructure at Scale</td>
+                    <td>Elena Rostova</td>
+                </tr>
+                <tr>
+                    <td>03:15 PM - 04:45 PM</td>
+                    <td>Zero Trust Cloud Security</td>
+                    <td>David Miller</td>
+                </tr>
+                <tr>
+                    <td>Evening</td>
+                    <td>05:00 PM - 06:30 PM</td>
+                    <td>Panel Discussion & Networking</td>
+                    <td>All Speakers</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" align="center">Note: All attendees are invited to the evening networking lounge.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Report Page</title>
+</head>
+<body>
+    <!-- 
+    QUESTION 8:
+    Create a Student Report Page:[cite: 6]
+    - <h1> for school name.[cite: 6]
+    - <table> for marks of 5 subjects.[cite: 6]
+    - Add a row that shows Total and Percentage (no calculation needed, just text).[cite: 6]
+    - Use attributes like rowspan, colspan, and title to improve clarity.[cite: 6]
+    -->
+
+    <h1>Greenwood High School</h1>
+    <h2>Student Academic Progress Report</h2>
+
+    <p><strong>Student Name:</strong> Bhavishya Raj | <strong>Grade:</strong> 12th | <strong>Roll No:</strong> 102</p>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th title="Subject Name">Subject</th>
+                <th title="Maximum Marks">Max Marks</th>
+                <th title="Marks Obtained by Student">Marks Obtained</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mathematics</td>
+                <td>100</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>100</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>Chemistry</td>
+                <td>100</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Computer Science</td>
+                <td>100</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>100</td>
+                <td>84</td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <td>500</td>
+                <td>455</td>
+            </tr>
+            <tr>
+                <th colspan="2">Overall Percentage</th>
+                <td>91%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Top Travel Destinations</title>
+</head>
+<body>
+    <!-- 
+    QUESTION 9:
+    Build a Travel Destination Page:[cite: 6]
+    - <header> with title "Top 3 Travel Destinations"[cite: 6]
+    - <main> containing three <article>s each with an <h2>, image, short paragraph, and a <blockquote> review.[cite: 6]
+    - <aside> listing "Travel Tips" as an unordered list.[cite: 6]
+    - <footer> with notice.[cite: 6]
+    -->
+
+    <header>
+        <h1>Top 3 Travel Destinations</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>1. Kyoto, Japan</h2>
+            <img src="kyoto.jpg" alt="Kyoto Shrine and Gardens" width="200">
+            <p>Kyoto is famous for its classical Buddhist temples, gardens, imperial palaces, Shinto shrines, and traditional wooden houses.</p>
+            <blockquote cite="#">
+                "An unforgettable blend of history, serene temples, and stunning natural beauty."
+            </blockquote>
+        </article>
+
+        <article>
+            <h2>2. Santorini, Greece</h2>
+            <img src="santorini.jpg" alt="Santorini White Houses" width="200">
+            <p>Santorini is one of the Cyclades islands in the Aegean Sea, devastated by a volcanic eruption in the 16th century BC, shaping its rugged landscape.</p>
+            <blockquote cite="#">
+                "The sunsets over the blue-domed buildings are unlike anything else in the world."
+            </blockquote>
+        </article>
+
+        <article>
+            <h2>3. Swiss Alps, Switzerland</h2>
+            <img src="alps.jpg" alt="Swiss Alps Mountains" width="200">
+            <p>The Swiss Alps offer breathtaking mountain vistas, world-class skiing, hiking trails, and picturesque Alpine villages.</p>
+            <blockquote cite="#">
+                "A paradise for outdoor enthusiasts and anyone looking for majestic scenery."
+            </blockquote>
+        </article>
+    </main>
+
+    <aside>
+        <h2>Travel Tips</h2>
+        <ul>
+            <li>Always keep digital copies of your passport and visa.</li>
+            <li>Purchase international travel insurance before departure.</li>
+            <li>Learn basic greeting phrases in the local language.</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>Notice: Information on this page is updated for 2026 travel guidelines. Check official travel advisories before booking.</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tourist Destination Preference</title>
+</head>
+<body>
+    <!-- 
+    QUESTION 10:
+    Create a Dropdown-based Selection Page:[cite: 6]
+    Add multiple <select> dropdowns for:
+    - Country[cite: 6]
+    - State[cite: 6]
+    - City[cite: 6]
+    - Favorite Tourist Place[cite: 6]
+    Each dropdown must have a pre-selected option.[cite: 6]
+    Add a <p> summarizing your choices.[cite: 6]
+    -->
+
+    <h1>Select Your Destination Preference</h1>
+
+    <form>
+        <p>
+            <label for="country">Country:</label><br>
+            <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="india" selected>India</option>
+                <option value="japan">Japan</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="state">State:</label><br>
+            <select id="state" name="state">
+                <option value="maharashtra">Maharashtra</option>
+                <option value="rajasthan" selected>Rajasthan</option>
+                <option value="kerala">Kerala</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="city">City:</label><br>
+            <select id="city" name="city">
+                <option value="jaipur" selected>Jaipur</option>
+                <option value="udaipur">Udaipur</option>
+                <option value="jodhpur">Jodhpur</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="place">Favorite Tourist Place:</label><br>
+            <select id="place" name="place">
+                <option value="amer-fort" selected>Amer Fort</option>
+                <option value="city-palace">City Palace</option>
+                <option value="hawa-mahal">Hawa Mahal</option>
+            </select>
+        </p>
+    </form>
+
+    <p>Summary: You have selected <strong>India</strong>, in the state of <strong>Rajasthan</strong>, city of <strong>Jaipur</strong>, and your favorite spot is <strong>Amer Fort</strong>.</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Daily Tech & World News</title>
+</head>
+<body>
+    <!-- 
+    QUESTION 11:
+    Design a News Layout Page:[cite: 6]
+    - <header> -> Site name[cite: 6]
+    - <nav> -> News Categories (Sports, Technology, Politics)[cite: 6]
+    - <main> 3 <article>s each with headline, date (<time>), short content, and a source link.[cite: 6]
+    - <aside> Popular Topics list[cite: 6]
+    - <footer> -> Contact & rights info.[cite: 6]
+    -->
+
+    <header>
+        <h1>Global Chronicle News</h1>
+    </header>
+
+    <nav>
+        <a href="#sports">Sports</a> |
+        <a href="#technology">Technology</a> |
+        <a href="#politics">Politics</a>
+    </nav>
+
+    <main>
+        <article id="sports">
+            <h2>National Championship Finals Set for Next Weekend</h2>
+            <p>Published: <time datetime="2026-08-28">August 28, 2026</time></p>
+            <p>The top two teams in the league secured their places in the finals after a thrilling semi-final victory yesterday afternoon.</p>
+            <a href="https://example.com/sports-news" target="_blank">Read source article</a>
+        </article>
+
+        <article id="technology">
+            <h2>Breakthrough in Quantum Computing Infrastructure</h2>
+            <p>Published: <time datetime="2026-08-29">August 29, 2026</time></p>
+            <p>Researchers have announced a stable room-temperature quantum processor architecture, promising faster processing speeds.</p>
+            <a href="https://example.com/tech-news" target="_blank">Read source article</a>
+        </article>
+
+        <article id="politics">
+            <h2>Global Economic Summit Concludes in Geneva</h2>
+            <p>Published: <time datetime="2026-08-30">August 30, 2026</time></p>
+            <p>World leaders reached a landmark agreement on international trade regulations and digital commerce standards.</p>
+            <a href="https://example.com/politics-news" target="_blank">Read source article</a>
+        </article>
+    </main>
+
+    <aside>
+        <h2>Popular Topics</h2>
+        <ul>
+            <li>Renewable Energy Transition</li>
+            <li>Cloud Automation Tools</li>
+            <li>Upcoming Olympic Qualifiers</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>Contact Editorial Team: editor@globalchronicle.com | &copy; 2026 Global Chronicle News. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quotation Showcase</title>
+</head>
+<body>
+    <!-- 
+    QUESTION 12:
+    Create a Quotation Showcase Page:[cite: 6]
+    - Add three <blockquote> quotes from different authors.[cite: 6]
+    - Include <cite> for each author.[cite: 6]
+    - Wrap each quote inside a <section> and give each a <h2> title.[cite: 6]
+    - End with a paragraph summarizing why quotes inspire people.[cite: 6]
+    -->
+
+    <h1>Inspirational Quotation Showcase</h1>
+
+    <section>
+        <h2>Quote on Perseverance</h2>
+        <blockquote cite="#">
+            "Success is not final, failure is not fatal: it is the courage to continue that counts."
+            <br>
+            — <cite>Winston Churchill</cite>
+        </blockquote>
+    </section>
+
+    <section>
+        <h2>Quote on Innovation</h2>
+        <blockquote cite="#">
+            "Innovation distinguishes between a leader and a follower."
+            <br>
+            — <cite>Steve Jobs</cite>
+        </blockquote>
+    </section>
+
+    <section>
+        <h2>Quote on Simplicity</h2>
+        <blockquote cite="#">
+            "Simplicity is the soul of efficiency."
+            <br>
+            — <cite>Austin Freeman</cite>
+        </blockquote>
+    </section>
+
+    <p>Summary: Quotes inspire people because they compress deep wisdom, life lessons, and motivating principles into brief, powerful sentences that resonate with personal experiences.</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Developer Blog</title>
+</head>
+<body>
+    <!-- 
+    QUESTION 13:
+    Build a Blog Layout Page using HTML5 semantic structure:[cite: 6]
+    - <header> -> Blog name[cite: 6]
+    - <nav> Menu (Home, Blogs, About)[cite: 6]
+    - <main>[cite: 6]
+      - <article> 1: "My First Blog"[cite: 6]
+      - <article> 2: "Things I Learned This Week"[cite: 6]
+    - Each article should have its own heading, paragraph, <time> tag, and <blockquote> inside.[cite: 6]
+    - <footer> -> "Written by [Your Name]".[cite: 6]
+    -->
+
+    <header>
+        <h1>DevOps Insights Blog</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">Blogs</a> |
+        <a href="#">About</a>
+    </nav>
+
+    <main>
+        <article>
+            <h2>My First Blog</h2>
+            <p>Published on: <time datetime="2026-08-15">August 15, 2026</time></p>
+            <p>Starting a technical blog is an exciting milestone. Writing down what I build helps clarify my understanding of cloud automation.</p>
+            <blockquote>
+                "The best way to learn something deeply is to teach or document it."
+            </blockquote>
+        </article>
+
+        <article>
+            <h2>Things I Learned This Week</h2>
+            <p>Published on: <time datetime="2026-08-22">August 22, 2026</time></p>
+            <p>This week I explored automated infrastructure deployments and multi-container orchestration with Docker Compose.</p>
+            <blockquote>
+                "Automation is not about replacing human effort; it is about freeing human capacity for higher problems."
+            </blockquote>
+        </article>
+    </main>
+
+    <footer>
+        <p>Written by Bhavishya Raj</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Movie Database</title>
+</head>
+<body>
+    <!-- 
+    QUESTION 14:
+    Create a Movie Database Page using a <table>:[cite: 6]
+    - Columns: Movie Name, Genre, Year, IMDB Rating, and Link.[cite: 6]
+    - Include attributes like border, title, and colspan.[cite: 6]
+    - Add a caption at the top and a note at the bottom using <small>.[cite: 6]
+    -->
+
+    <h1>Curated Movie Database</h1>
+
+    <table border="1">
+        <caption>Top Rated Sci-Fi & Drama Movies</caption>
+        <thead>
+            <tr>
+                <th title="Title of the Movie">Movie Name</th>
+                <th title="Film Genre">Genre</th>
+                <th title="Release Year">Year</th>
+                <th title="Score out of 10">IMDB Rating</th>
+                <th title="External Link">Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Interstellar</td>
+                <td>Sci-Fi / Drama</td>
+                <td>2014</td>
+                <td>8.7</td>
+                <td><a href="https://www.imdb.com" target="_blank">View on IMDB</a></td>
+            </tr>
+            <tr>
+                <td>The Dark Knight</td>
+                <td>Action / Crime</td>
+                <td>2008</td>
+                <td>9.0</td>
+                <td><a href="https://www.imdb.com" target="_blank">View on IMDB</a></td>
+            </tr>
+            <tr>
+                <td>Inception</td>
+                <td>Sci-Fi / Action</td>
+                <td>2010</td>
+                <td>8.8</td>
+                <td><a href="https://www.imdb.com" target="_blank">View on IMDB</a></td>
+            </tr>
+            <tr>
+                <td colspan="5" align="center">All ratings are sourced directly from public review aggregators.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><small>Note: Ratings and availability links are updated periodically.</small></p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Developer Portfolio</title>
+</head>
+<body>
+    <!-- 
+    QUESTION 15:
+    Build a Portfolio Layout Page using HTML only:[cite: 6]
+    - <header> -> Your name and role[cite: 6]
+    - <nav> -> Navigation links[cite: 6]
+    - <main>[cite: 6]
+      - <section> "About Me" (paragraph + quote)[cite: 6]
+      - <section> "Skills" (unordered list)[cite: 6]
+      - <section> "Projects" (ordered list or table)[cite: 6]
+    - <aside> -> Contact Info (email, phone, LinkedIn link)[cite: 6]
+    - <footer> -> Closing copyright line[cite: 6]
+    -->
+
+    <header>
+        <h1>Bhavishya Raj</h1>
+        <p>Role: Cloud Engineer & DevOps Specialist</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#projects">Projects</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I build and automate resilient cloud infrastructure, CI/CD delivery pipelines, and container deployment environments.</p>
+            <blockquote cite="#">
+                "Strive for clean design and efficient execution."
+            </blockquote>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Amazon Web Services (AWS)</li>
+                <li>Docker & Kubernetes</li>
+                <li>CI/CD Pipeline Automation</li>
+                <li>Linux Administration</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ol>
+                <li>Automated Multi-Cloud Infrastructure Deployment</li>
+                <li>GitOps Container Delivery Engine</li>
+                <li>Distributed Log Monitoring Tool</li>
+            </ol>
+        </section>
+    </main>
+
+    <aside id="contact">
+        <h2>Contact Information</h2>
+        <p>Email: bhavishya@example.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com" target="_blank">View LinkedIn Profile</a></p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 Bhavishya Raj. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

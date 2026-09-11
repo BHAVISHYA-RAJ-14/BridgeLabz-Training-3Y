@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Sizing Comparison</title>
+    <link rel="stylesheet" href="q8.css">
+</head>
+<body>
+    <main class="comparison-layout">
+        <div class="box standard-box">
+            <h2>Default Box</h2>
+            <p>box-sizing: content-box;</p>
+            <p>This box is wider than 300px because the padding (40px) is added to the total width.</p>
+        </div>
+
+        <div class="box better-box">
+            <h2>Border Box</h2>
+            <p>box-sizing: border-box;</p>
+            <p>This box stays exactly 300px wide. The padding pushes inward instead.</p>
+        </div>
+    </main>
+</body>
+</html>

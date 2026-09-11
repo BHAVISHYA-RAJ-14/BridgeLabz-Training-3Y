@@ -1,0 +1,66 @@
+/* Setting up a simple flex layout for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #fafafa;
+}
+
+.demo-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.test-block {
+    width: 30%;
+    text-align: center;
+}
+
+/* Link hover styling */
+.my-link {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.my-link:hover {
+    color: #ff3300;
+    text-decoration: underline;
+}
+
+/* Button focus/active styling */
+.action-btn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.action-btn:focus {
+    outline: 3px solid #ff9800;
+    outline-offset: 2px;
+}
+.action-btn:active {
+    background-color: #388e3c;
+    transform: translateY(2px); /* pressing down effect */
+}
+
+/* List nth-child styling */
+.fruits-list {
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+.fruits-list li {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+}
+.fruits-list li:nth-child(even) {
+    background-color: #f1f8ff; /* Light blue for even rows */
+}

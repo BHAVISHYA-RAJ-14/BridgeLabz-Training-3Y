@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #eceff1;
+}
+
+.btn-container {
+    display: flex;
+    gap: 40px;
+}
+
+.fancy-btn {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #8e44ad; /* purple */
+    border: none;
+    border-radius: 50px; /* pill shape */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    
+    /* combining transition properties for a smooth effect */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Combining hover (pseudo-class), transform, and shadow */
+.fancy-btn:hover {
+    background-color: #9b59b6;
+    transform: scale(1.1) translateY(-3px);
+    box-shadow: 0 10px 15px rgba(142, 68, 173, 0.4);
+}
+
+.fancy-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

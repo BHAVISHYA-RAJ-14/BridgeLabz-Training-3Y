@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.comparison-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+/* Base styling for both boxes */
+.box {
+    width: 300px;
+    padding: 40px;
+    border: 5px solid #2c3e50;
+    color: white;
+    border-radius: 8px;
+}
+
+.box h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+/* Box 1 */
+.standard-box {
+    box-sizing: content-box; /* default behavior */
+    background-color: #e74c3c; /* red */
+}
+
+/* Box 2 */
+.better-box {
+    box-sizing: border-box; /* preferred by most devs */
+    background-color: #27ae60; /* green */
+}
+
+/* Make it stack on small phones */
+@media (max-width: 750px) {
+    .comparison-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+}

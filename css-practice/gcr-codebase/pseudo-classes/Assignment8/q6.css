@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e272e;
+    font-family: sans-serif;
+}
+
+.animation-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+}
+
+/* 1. Moving Box */
+.sliding-box {
+    width: 120px;
+    height: 40px;
+    background-color: #0fb9b1;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    /* animation properties */
+    animation-name: slideSideToSide;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slideSideToSide {
+    0% { transform: translateX(-150px); }
+    100% { transform: translateX(150px); }
+}
+
+/* 2. Bouncing Ball */
+.bouncing-ball {
+    width: 60px;
+    height: 60px;
+    background-color: #eb3b5a;
+    border-radius: 50%; /* makes it a circle */
+    
+    animation: bounce 0.8s ease-in-out infinite alternate;
+    animation-delay: 0.2s; /* start a bit late */
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-80px); }
+}
+
+/* 3. Color Changing Text */
+.glowing-text {
+    font-size: 2rem;
+    margin: 0;
+    animation: pulseColor 3s ease-in-out infinite alternate;
+}
+
+@keyframes pulseColor {
+    0% { color: #f7b731; text-shadow: 0 0 5px #f7b731; }
+    50% { color: #20bf6b; text-shadow: 0 0 10px #20bf6b; }
+    100% { color: #45aaf2; text-shadow: 0 0 5px #45aaf2; }
+}

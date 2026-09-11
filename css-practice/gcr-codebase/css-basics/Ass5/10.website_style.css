@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #172a3a;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    z-index: 10;
+    outline: 2px solid #5d8aa8;
+}
+
+header h1 {
+    margin: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.hero {
+    position: relative;
+    min-height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("https://picsum.photos/1400/700");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero div {
+    position: relative;
+    padding: 30px;
+}
+
+.hero h2 {
+    font-size: 50px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 70px 10%;
+    background-color: #eef5f8;
+}
+
+.about div, .about img {
+    width: 50%;
+}
+
+.about img {
+    border: 5px solid white;
+}
+
+.services {
+    padding: 70px 8%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.service-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.service {
+    position: relative;
+    flex: 1;
+    padding: 30px;
+    border: 2px solid #7a9aaa;
+    outline: 1px solid #dce7ec;
+    background-color: #f5f9fb;
+    border-radius: 10px;
+}
+
+.contact {
+    padding: 70px 10%;
+    background: linear-gradient(to right, #e6f0f5, #ffffff);
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    background-color: #172a3a;
+    color: white;
+}
+
+footer {
+    position: relative;
+    background-color: #172a3a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media screen and (max-width: 700px) {
+    .about, .service-container {
+        flex-direction: column;
+    }
+
+    .about div, .about img, .service {
+        width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 35px;
+    }
+}

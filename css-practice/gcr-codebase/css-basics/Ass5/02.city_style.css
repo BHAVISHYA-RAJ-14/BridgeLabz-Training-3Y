@@ -1,0 +1,104 @@
+/* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+header {
+    background-color: #5b2c06;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #d89b3d;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    width: 100%;
+    min-height: 350px;
+    padding: 60px 10%;
+    margin: 0;
+    border-bottom: 3px solid white;
+}
+
+section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.home {
+    background: linear-gradient(to right, #f6d365, #fda085);
+    background-attachment: fixed;
+}
+
+.history {
+    background: radial-gradient(circle, #ffffff, #d7e9f7);
+    background-attachment: fixed;
+}
+
+.places {
+    background-color: #fff3df;
+}
+
+.places h2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.place-box {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid #8b5e34;
+    border-radius: 10px;
+}
+
+.place-box h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+footer {
+    background-color: #5b2c06;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}

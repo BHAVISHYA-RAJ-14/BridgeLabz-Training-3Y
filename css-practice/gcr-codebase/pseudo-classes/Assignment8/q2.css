@@ -1,0 +1,68 @@
+/* Center everything using Flexbox */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9ecef;
+}
+
+.center-content {
+    display: flex;
+    gap: 50px;
+}
+
+/* The parent needs relative positioning to anchor the absolute tooltip */
+.hover-item {
+    position: relative;
+    cursor: help;
+    background: #fff;
+    padding: 15px 25px;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #ddd;
+}
+
+.label {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Tooltip styles */
+.custom-tooltip {
+    position: absolute;
+    bottom: 130%; /* Place it right above the element */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #222;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    
+    /* Fade in setup */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* Add a tiny triangle pointing down */
+.custom-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+}
+
+/* Show tooltip on hover */
+.hover-item:hover .custom-tooltip {
+    opacity: 1;
+    visibility: visible;
+}

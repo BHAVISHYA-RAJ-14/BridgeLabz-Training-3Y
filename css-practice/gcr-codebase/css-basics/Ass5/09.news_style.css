@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 30px;
+    background-color: #e5e5e5;
+    font-family: Georgia, serif;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+}
+
+h1 {
+    column-span: all;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+article {
+    column-count: 3;
+    column-gap: 30px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+article img {
+    float: left;
+    width: 45%;
+    margin: 0 15px 10px 0;
+}
+
+@media screen and (max-width: 800px) {
+    article {
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    article {
+        column-count: 1;
+    }
+}

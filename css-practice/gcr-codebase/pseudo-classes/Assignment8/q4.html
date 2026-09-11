@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors Demo</title>
+    <link rel="stylesheet" href="q4.css">
+</head>
+<body>
+    <header>
+        <h1>Practicing Selectors</h1>
+    </header>
+
+    <main class="content-area">
+        <!-- Element and Class selectors -->
+        <p class="highlight-text">This paragraph uses a class selector.</p>
+        
+        <!-- ID selector -->
+        <p id="special-note">This paragraph has a unique ID.</p>
+        
+        <section class="nested-box">
+            <p>I am a direct child of the nested-box section.</p>
+            <div>
+                <p>I am a descendant, but not a direct child.</p>
+            </div>
+        </section>
+
+        <!-- Sibling selectors -->
+        <h2 class="title-marker">Sibling Selectors Below</h2>
+        <p>I am immediately after the h2 (Adjacent Sibling).</p>
+        <p>I am also a sibling of the h2, but further down (General Sibling).</p>
+        <ul>
+            <li>Just a random list item.</li>
+        </ul>
+        <p>Another general sibling paragraph.</p>
+
+        <!-- Attribute selector -->
+        <a href="https://example.com" target="_blank">External Link (opens in new tab)</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Homework</p>
+    </footer>
+</body>
+</html>
